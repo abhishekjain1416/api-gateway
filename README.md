@@ -7,7 +7,7 @@ An API Gateway serves as a single entry point for managing, aggregating, and rou
 
 ## **Architecture**
 
-![architecture](https://github.com/abhishekjain1416/api-gateway/assets/142833334/f8132eb2-9507-4f31-9a23-4c3f4a0ec3cc)
+![architecture-API Gateway drawio](https://github.com/abhishekjain1416/api-gateway/assets/142833334/05d8bc2e-e122-4a80-9613-8f09d96e0e86)
 
 
 ### Keycloak as an Authentication Server
