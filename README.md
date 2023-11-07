@@ -1,11 +1,17 @@
 # API Gateway using Spring Cloud Gateway
-## **Introduction**
+## Introduction
 
 The API Gateway project is designed to provide a simple yet effective solution for routing to APIs and handling cross-cutting concerns such as security, monitoring/metrics, and resiliency.
 
 An API Gateway serves as a single entry point for managing, aggregating, and routing API requests. It is a key component in efficiently handling API traffic, ensuring security, and optimizing performance.
 
-## **Architecture**
+## Architecture
+
+Overall Architecture of the E-Commerce Platform
+
+![architecture-E-Commerce Application drawio](https://github.com/abhishekjain1416/api-gateway/assets/142833334/5853718e-bcd7-4508-ab17-ff5bc85aeb6c)
+
+API Gateway is used to route requests to different microservices based on the URL path. For example, request path starting with /api/product, /api/order, /eureka will be routed to the URI http://localhost:8080
 
 ![architecture-API Gateway drawio](https://github.com/abhishekjain1416/api-gateway/assets/142833334/05d8bc2e-e122-4a80-9613-8f09d96e0e86)
 
