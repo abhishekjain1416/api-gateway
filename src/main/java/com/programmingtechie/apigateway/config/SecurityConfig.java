@@ -10,8 +10,18 @@ import org.springframework.security.web.server.SecurityWebFilterChain;
 @EnableWebFluxSecurity
 public class SecurityConfig {
 
+    /**
+     * This method defines the security configuration for the Spring WebFlux application.
+     * @param serverHttpSecurity
+     * @return
+     */
     @Bean
     public SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity serverHttpSecurity){
+        /**
+         * Disable CSRF protection since this is a stateless, token-based authentication.
+         * Allow access to paths starting with "/eureka/" without authentication & require authentication for any other path.
+         * Configure OAuth2 resource server (Keycloak) using JWT for authentication.
+         */
 
         serverHttpSecurity
             .csrf(csrf -> csrf.disable())
@@ -24,6 +34,7 @@ public class SecurityConfig {
             )
         ;
 
+        // Build and return the configured SecurityWebFilterChain
         return serverHttpSecurity.build();
     }
 }
